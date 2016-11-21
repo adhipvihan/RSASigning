@@ -167,7 +167,7 @@ int i=0;
 for(i;i<5;i++){
     encryption_helper(hashFun1,"rsaprivatekey1024.pem","1024");
     encryption_helper(hashFun256,"rsaprivatekey1024.pem","1024");
-    encryption_helper(hashFun1,"rsaprivatekey1024.pem","2048");
+    encryption_helper(hashFun1,"rsaprivatekey2048.pem","2048");
     encryption_helper(hashFun256,"rsaprivatekey2048.pem","2048");
 }
 
@@ -178,7 +178,7 @@ i=0;
 for(i;i<5;i++){
     verification_helper(hashFun1,"rsapublickey1024.pem","1024");
 	verification_helper(hashFun256,"rsapublickey1024.pem","1024");
-	verification_helper(hashFun1,"rsapublickey1024.pem","2048");
+	verification_helper(hashFun1,"rsapublickey2048.pem","2048");
 	verification_helper(hashFun256,"rsapublickey2048.pem","2048");
 }
     return 0;
